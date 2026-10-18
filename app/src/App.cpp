@@ -1,7 +1,7 @@
 //
-//  CPU-M
+//  CPU-R
 //
-//  (c) 2025-2026 TDolphin
+//  (c) 2026 TDolphin
 //
 
 #include "App.hpp"
