@@ -1,0 +1,20 @@
+//
+//  CPU-R
+//
+//  (c) 2026 TDolphin
+//
+
+#pragma once
+
+#include "MUI/Text.hpp"
+
+namespace Components
+{
+    class Base
+    {
+      public:
+        MUI::Text LabelText(const std::string &label, const short weight = 0);
+        MUI::Text ValueText(const std::string &help, const std::string &defaultValue = "--", const bool shorten = false,
+                            const short weight = 100);
+    };
+}
