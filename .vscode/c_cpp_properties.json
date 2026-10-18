@@ -6,6 +6,7 @@
                 "../AmigaOS.cpp.wrapper/wrappers/src/",
                 "../AmigaOS.MUI.cpp.wrapper/wrappers/src/",
                 "../AmigaOS.MUI.cpp.wrapper/components/src/",
+                "${workspaceFolder}/app/src/**",
                 "/opt/aros/Development/include/"
             ],
             "defines": [
