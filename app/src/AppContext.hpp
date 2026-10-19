@@ -7,6 +7,7 @@
 #pragma once
 
 #include "AOS/Intuition/IntuitionBaseScope.hpp"
+#include "AOS/OpenURL/OpenURLBaseScope.hpp"
 
 class AppContextCore
 {
@@ -16,6 +17,7 @@ class AppContextCore
     ~AppContextCore();
 
   public:
+    OpenURLBaseScope &getOpenURLBase() const;
     IntuitionBaseScope &getIntuitionBase() const;
 };
 

@@ -7,6 +7,7 @@
 #pragma once
 
 #include "AOS/Intuition/IntuitionBaseScope.hpp"
+#include "AOS/OpenURL/OpenURLBaseScope.hpp"
 #include "Core/Singleton.hpp"
 #include "MUI/Core/MuiMasterBaseScope.hpp"
 
@@ -19,11 +20,12 @@ class AppCore
 
     // open libraries, close on destructor
     MuiMasterBaseScope muiBaseScope;
+    OpenURLBaseScope openURLBaseScope;
     IntuitionBaseScope intuitionBaseScope;
 
     AppCore();
 
-public:
+  public:
     void Run();
 };
 
