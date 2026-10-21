@@ -21,7 +21,7 @@ namespace Label
     const std::string &AboutTab = "About";
 
     // menu items
-    const std::string &MenuCPUM = "CPU-R";
+    const std::string &MenuCPUR = "CPU-R";
     const std::string &MenuAbout = "About";
     const std::string &MenuQuit = "Quit";
     const std::string &MenuSettings = "Settings";
