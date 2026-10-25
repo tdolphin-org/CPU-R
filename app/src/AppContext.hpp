@@ -8,6 +8,7 @@
 
 #include "AOS/Intuition/IntuitionBaseScope.hpp"
 #include "AOS/OpenURL/OpenURLBaseScope.hpp"
+#include "Core/Singleton.hpp"
 
 class AppContextCore
 {
