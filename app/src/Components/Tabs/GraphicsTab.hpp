@@ -1,0 +1,34 @@
+//
+//  CPU-R
+//
+//  (c) 2026 TDolphin
+//
+
+#pragma once
+
+#include "Components/Base.hpp"
+#include "Components/Core/Root.hpp"
+#include "Components/Tabs/Graphics/GraphicsBoards.hpp"
+
+#include "MUI/Group.hpp"
+
+namespace Components
+{
+    class GraphicsTab : public Root<MUI::Group>, public Base
+    {
+        MUI::Text mGfxSystemText;
+        GraphicsBoards mGraphicsBoards;
+
+        MUI::Group mComponent;
+
+      public:
+        GraphicsTab();
+        ~GraphicsTab();
+
+      protected:
+        MUI::Group &muiRoot() const override
+        {
+            return const_cast<MUI::Group &>(mComponent);
+        }
+    };
+}
