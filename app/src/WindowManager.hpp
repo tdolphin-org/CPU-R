@@ -8,7 +8,6 @@
 
 #include "Components/Windows/BoardAttributesWindow.hpp"
 #include "Components/Windows/BusInterfacesSpecWindow.hpp"
-#include "Components/Windows/GPUSpecWindow.hpp"
 #include "Core/Singleton.hpp"
 #include "MUI/Window.hpp"
 
@@ -19,7 +18,6 @@ class WindowManagerCore
 {
     friend class td::Singleton<WindowManagerCore>;
 
-    Components::GPUSpecWindow mGPUSpecWindow;
     Components::BusInterfacesSpecWindow mBusInterfacesSpecWindow;
     Components::BoardAttributesWindow mBoardAttributesWindow;
 
@@ -30,16 +28,6 @@ class WindowManagerCore
 
   public:
     const std::vector<MUI::Window> &getAllWindows() const;
-
-    Components::GPUSpecWindow &getGPUSpecWindow()
-    {
-        return mGPUSpecWindow;
-    }
-
-    Components::MemoryModuleSpecWindow &getMemoryModuleSpecWindow()
-    {
-        return mMemoryModuleSpecWindow;
-    }
 
     Components::BusInterfacesSpecWindow &getBusInterfacesSpecWindow()
     {
