@@ -1,0 +1,36 @@
+//
+//  CPU-R
+//
+//  (c) 2026 TDolphin
+//
+
+#include "Components/Core/Root.hpp"
+
+#include "Components/Base.hpp"
+#include "MUI/Group.hpp"
+#include "MUI/Window.hpp"
+
+namespace Components
+{
+    class BusInterfacesSpecWindow : public Root<MUI::Window>, public Base
+    {
+        MUI::Group mPciInterfacesGroup;
+        MUI::Group mAgpInterfacesGroup;
+        MUI::Group mPcieInterfacesGroup;
+        MUI::Group mBusInterfacesGroup;
+
+        MUI::Window mComponent;
+
+      public:
+        BusInterfacesSpecWindow();
+
+        void Open();
+        void Close();
+
+      protected:
+        MUI::Window &muiRoot() const override
+        {
+            return const_cast<MUI::Window &>(mComponent);
+        }
+    };
+}
