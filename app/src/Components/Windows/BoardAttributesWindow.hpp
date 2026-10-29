@@ -12,12 +12,6 @@
 #include "MUI/Group.hpp"
 #include "MUI/Window.hpp"
 
-// forward declarations
-namespace AOS::PCIX
-{
-    struct BoardAttributes;
-}
-
 namespace Components
 {
     class BoardAttributesWindow : public Root<MUI::Window>, public Base

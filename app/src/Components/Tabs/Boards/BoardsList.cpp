@@ -6,7 +6,6 @@
 
 #include "BoardsList.hpp"
 
-#include "AOS/PCIIDS/Library.hpp"
 #include "WindowManager.hpp"
 
 #include "amiga_std_light/sstream.hpp"
@@ -58,8 +57,6 @@ namespace Components
 
     void BoardsList::OpenBoardAttributes(const long activeEntry) const
     {
-        auto boardAttributesOpt = AOS::PCIX::Library::GetBoardAttributes(mBoards[activeEntry].first);
-        if (boardAttributesOpt.has_value())
-            WindowManager::instance().getBoardAttributesWindow().Open(mBoards[activeEntry].second, boardAttributesOpt.value());
+        // TODO : get board attributes and open board attributes window with them
     }
 }
