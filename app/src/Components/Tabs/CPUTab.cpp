@@ -16,7 +16,8 @@
 namespace Components
 {
     CPUTab::CPUTab()
-      : mCPUOrCoreCycle(MCC::ActionCycleBuilder().tagWeight(0).object(*this))
+      : mCPUInfoGroup(MUI::GroupBuilder().vertical().tagPageMode().object()) // TODO: add CPU info pages for each CPU
+      , mCPUOrCoreCycle(MCC::ActionCycleBuilder().tagWeight(0).object(*this))
       , mCPUCountText(MUI::TextBuilder()
                           .tagShortHelp("Number of CPUs")
                           .tagContents("of " + std::to_string(0))

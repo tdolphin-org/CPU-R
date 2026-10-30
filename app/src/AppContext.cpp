@@ -28,7 +28,7 @@ AppContextCore::~AppContextCore()
 
 OpenURLBaseScope &AppContextCore::getOpenURLBase() const
 {
-    return App::instance().openURLBaseScope;
+    return App::instance().openUrlBaseScope;
 }
 
 IntuitionBaseScope &AppContextCore::getIntuitionBase() const

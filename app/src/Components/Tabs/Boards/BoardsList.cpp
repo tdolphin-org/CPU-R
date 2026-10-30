@@ -17,9 +17,9 @@ namespace Components
 
     BoardsList::BoardsList()
       : mComponent(MCC::ActionListBuilder()
-                       .stringArrayHooks(4)
+                       .tagConstructHookString()
+                       .tagDestructHookString()
                        .tagFormat("BAR MINWIDTH=0,BAR MINWIDTH=0,BAR MINWIDTH=0,")
-                       .tagTitleArray(titles)
                        .tagTitle(true)
                        .tagFrame(MUI::Frame::Group)
                        .object(*this))

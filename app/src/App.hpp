@@ -20,7 +20,7 @@ class AppCore
 
     // open libraries, close on destructor
     MuiMasterBaseScope muiBaseScope;
-    OpenURLBaseScope openURLBaseScope;
+    OpenURLBaseScope openUrlBaseScope;
     IntuitionBaseScope intuitionBaseScope;
 
     AppCore();
