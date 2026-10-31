@@ -15,12 +15,11 @@
 # trace/debug flags
 DEBUG_FLAGS = #-DTRACE -DTRACE_CUSTOM_COMPONENTS -DTRACE_AMIGAOS
 
-CPP_FLAGS = $(DEBUG_FLAGS) $(MORE_CPP_FLAGS) -D_NO_PPCINLINE -Wall -D_GLIBCXX_USE_WCHAR_T=0\
+CPP_FLAGS = $(DEBUG_FLAGS) $(MORE_CPP_FLAGS) -Wall\
 	-Isrc -I${AOSCPP_PATH}/wrappers/src -I${MUICPP_PATH}/wrappers/src -I${MUICPP_PATH}/components/src \
-	-fno-rtti -ffunction-sections -fdata-sections\
-	-Os -flto
+	-fno-rtti -ffunction-sections -fdata-sections -Os
 LFLAGS = -L${AOSCPP_PATH}/wrappers/lib/$(SUB_BUILD_PATH) -L${MUICPP_PATH}/wrappers/lib/$(SUB_BUILD_PATH) -lamiga_std_light -lMUIcpp\
-	$(MORE_LFLAGS) -flto
+	$(MORE_LFLAGS)
 
 dir_guard = mkdir -p $(@D)
 
