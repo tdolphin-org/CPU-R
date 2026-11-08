@@ -1,0 +1,8 @@
+Short:        System Information Tool
+Uploader:     rafal.zabdyr@tdolphin.org (Rafal Zabdyr)
+Author:       Rafal Zabdyr
+Type:         util/moni
+Version:      %VERSION%
+Architecture: i386-aros
+URL:          https://www.tdolphin.org/projects.php#cpu-r
+
